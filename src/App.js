@@ -23,7 +23,7 @@ const Portfolio = () => {
       description: "Instant-branding service for small businesses using lean MVP principles. Built complete brand system with Notion, Paystack, Tailwind, and Vercel.",
       tech: "Tailwind × Paystack × Notion × Vercel",
       status: "Live Product",
-      liveUrl: "https://immanuelaziba.github.com/quickbrandng",
+      liveUrl: "https://immanuelaziba.github.io/quickbrandng",
       sourceUrl: "https://github.com/immanuelaziba/quickbrandng"
     },
     {
