@@ -43,8 +43,8 @@ const Portfolio = () => {
       description: "Full CRUD blog API with Node.js, Express, MongoDB, JWT authentication. Complete documentation and testing in Postman.",
       tech: "Node.js × Express × MongoDB × JWT",
       status: "Certified",
-      liveUrl: "https://immanuelaziba.github.io/blog-api-v1",
-      sourceUrl: "https://github.com/immanuelaziba/blog-api-v1"
+      liveUrl: "https://immanuelaziba.github.io/neo-brutal-blog",
+      sourceUrl: "https://github.com/immanuelaziba/neo-brutal-blog"
     },
     {
       number: "04",
