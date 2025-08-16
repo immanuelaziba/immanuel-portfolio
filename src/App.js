@@ -64,7 +64,7 @@ const Portfolio = () => {
       tech: "React × TailwindCSS × Local Storage",
       status: "Open Source",
       liveUrl: "https://immanuelaziba.github.io/soulstack-v1",
-      sourceUrl: "https://github.com/immanuelaziba/soulstack-v1"
+      sourceUrl: "https://soulstack-v1.vercel.app/"
     }
   ];
 
