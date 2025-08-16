@@ -63,8 +63,8 @@ const Portfolio = () => {
       description: "React-based flashcard app with Tailwind styling, local storage progress tracking, and daily Stoic quote delivery. Designed for mindful learning and consistent practice.",
       tech: "React × TailwindCSS × Local Storage",
       status: "Open Source",
-      liveUrl: "https://immanuelaziba.github.io/soulstack-v1",
-      sourceUrl: "https://soulstack-v1.vercel.app/"
+      liveUrl: "https://soulstack-v1.vercel.app",
+      sourceUrl: "https://github.com/immanuelaziba/soulstack-v1"
     }
   ];
 
