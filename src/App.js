@@ -18,13 +18,13 @@ const Portfolio = () => {
   const projects = [
     {
       number: "01",
-      title: "Blog API Backend",
-      category: "GIZ Certification",
-      description: "Full CRUD blog API with Node.js, Express, MongoDB, JWT authentication. Input validation with Joi, file uploads with Multer. Complete documentation and testing in Postman.",
-      tech: "Node.js × Express × MongoDB × JWT",
-      status: "GIZ Certified",
-      liveUrl: "https://immanuelaziba.github.io/neo-brutal-blog",
-      sourceUrl: "https://github.com/immanuelaziba/neo-brutal-blog"
+      title: "QuickBrand NG",
+      category: "Brand System Startup",
+      description: "Instant-branding service for small businesses using lean MVP principles. Built complete brand system with Notion, Paystack, Tailwind, and Vercel.",
+      tech: "Tailwind × Paystack × Notion × Vercel",
+      status: "Live Product",
+      liveUrl: "https://immanuelaziba.github.com/quickbrandng", // Replace with actual URL
+      sourceUrl: "https://github.com/immanuelaziba/quickbrandng" // Replace with actual repo
     },
     {
       number: "02", 
@@ -38,23 +38,23 @@ const Portfolio = () => {
     },
     {
       number: "03",
-      title: "QuickBrand NG",
-      category: "MVP Startup",
-      description: "Instant-branding service MVP with automated digital delivery. Single-file HTML/CSS/JS build deployed on Vercel, integrated with Paystack and Notion for seamless fulfillment.",
-      tech: "HTML/CSS/JS × Paystack × Notion × Vercel",
-      status: "Live MVP",
-      liveUrl: "https://immanuelaziba.github.io/quickbrandng",
-      sourceUrl: "https://github.com/immanuelaziba/quickbrandng"
+      title: "Blog API Backend",
+      category: "GIZ Certification",
+      description: "Full CRUD blog API with Node.js, Express, MongoDB, JWT authentication. Complete documentation and testing in Postman.",
+      tech: "Node.js × Express × MongoDB × JWT",
+      status: "Certified",
+      liveUrl: "https://immanuelaziba.github.io/blog-api-v1", // Replace with actual URL
+      sourceUrl: "https://github.com/immanuelaziba/blog-api-v1" // Replace with actual repo
     },
     {
       number: "04",
-      title: "Portfolio Website",
-      category: "Personal Project", 
-      description: "Modern portfolio built with React and TailwindCSS. Features modular design, smooth animations, responsive layout, and Lighthouse score 92+. Integrated with Notion CMS.",
-      tech: "React × TailwindCSS × Framer Motion",
-      status: "Live Site",
-      liveUrl: "https://immanuelaziba.vercel.app",
-      sourceUrl: "https://github.com/immanuelaziba/portfolio"
+      title: "Commit Circle UI",
+      category: "Component Library", 
+      description: "Modular React component library with Chart.js integration. Documented in Storybook for interactive testing and developer experience.",
+      tech: "React × Chart.js × Storybook",
+      status: "Open Source",
+      liveUrl: "https://immanuelaziba.github.io/commit-circle-ui-kit", // Replace with actual URL
+      sourceUrl: "https://github.com/immanuelaziba/commit-circle-ui-kit" // Replace with actual repo
     },
     {
       number: "05",
@@ -63,8 +63,8 @@ const Portfolio = () => {
       description: "Dashboard UI component library with charts, tables, and modals. Built with React and documented in Storybook for developer teams. Interactive testing and reusable components.",
       tech: "React × Chart.js × Storybook",
       status: "Open Source",
-      liveUrl: "https://immanuelaziba.github.io/commit-circle-ui-kit",
-      sourceUrl: "https://github.com/immanuelaziba/commit-circle-ui-kit"
+      liveUrl: "https://immanuelaziba.github.io/soulstack-v1",
+      sourceUrl: "https://github.com/immanuelaziba/soulstack-v1"
     }
   ];
 
@@ -158,12 +158,12 @@ const Portfolio = () => {
           </div>
 
           {/* Subtitle */}
-          <div className="max-w-2xl mx-auto mb-8 sm:mb-16">
-            <p className="text-lg sm:text-xl font-light leading-relaxed text-[#303438]/70 mb-4 px-4 sm:px-0">
-              Software Engineer × Frontend Developer × Full-Stack Builder
+          <div className="max-w-2xl mx-auto mb-16">
+            <p className="text-xl font-light leading-relaxed text-[#303438]/70 mb-4">
+              Brand Designer × Frontend Developer × Strategy-Driven Builder
             </p>
-            <p className="text-sm sm:text-base font-light leading-relaxed text-[#303438]/60 px-4 sm:px-0">
-              Building scalable web applications and APIs with React, Node.js, and modern tools.
+            <p className="text-base font-light leading-relaxed text-[#303438]/60">
+              Guiding creators through digital transformation with clarity, simplicity, and trust.
             </p>
           </div>
 
@@ -182,24 +182,25 @@ const Portfolio = () => {
             </button>
           </div>
 
-          {/* Stats - Mobile Friendly */}
-          <div className="flex items-center justify-center gap-8 sm:gap-16 text-center mt-6 sm:mt-8 px-4">
-            <div>
-              <div className="text-xl sm:text-2xl font-light text-[#A12121]">GIZ</div>
-              <div className="text-xs tracking-wider text-[#303438]/60">CERTIFIED</div>
-            </div>
-            <div className="w-px h-8 sm:h-12 bg-[#303438]/10"></div>
-            <div>
-              <div className="text-xl sm:text-2xl font-light text-[#A12121]">40+</div>
-              <div className="text-xs tracking-wider text-[#303438]/60">SALES</div>
-            </div>
-            <div className="w-px h-8 sm:h-12 bg-[#303438]/10"></div>
-            <div>
-              <div className="text-xl sm:text-2xl font-light text-[#A12121]">5+</div>
-              <div className="text-xs tracking-wider text-[#303438]/60">PROJECTS</div>
+            
+            {/* Stats - Minimal */}
+            <div className="flex items-center gap-16 text-center mt-8">
+              <div>
+                <div className="text-2xl font-light text-[#A12121]">40+</div>
+                <div className="text-xs tracking-wider text-[#303438]/60">KITS SOLD</div>
+              </div>
+              <div className="w-px h-12 bg-[#303438]/10"></div>
+              <div>
+                <div className="text-2xl font-light text-[#A12121]">3</div>
+                <div className="text-xs tracking-wider text-[#303438]/60">PRODUCTS SHIPPED</div>
+              </div>
+              <div className="w-px h-12 bg-[#303438]/10"></div>
+              <div>
+                <div className="text-2xl font-light text-[#A12121]">5+</div>
+                <div className="text-xs tracking-wider text-[#303438]/60">CLIENT PROJECTS</div>
+              </div>
             </div>
           </div>
-        </div>
       </section>
 
       {/* Skills Section */}
@@ -371,14 +372,14 @@ const Portfolio = () => {
           </div>
           
           <div className="max-w-3xl mx-auto">
-            <p className="text-lg sm:text-xl font-light leading-relaxed text-[#303438]/80 text-center mb-6 sm:mb-8">
-              I believe in building <span className="text-[#A12121]">scalable systems</span> with clean code. 
-              Every application deserves a solid foundation that teams can extend, 
-              users can trust, and businesses can <span className="text-[#C6A357]">grow with confidence</span>.
+            <p className="text-xl font-light leading-relaxed text-[#303438]/80 text-center mb-8">
+              I believe in the power of <span className="text-[#A12121]">systematic clarity</span>. 
+              Every brand deserves a foundation that developers can trust, 
+              designers can expand, and creators can <span className="text-[#C6A357]">scale confidently</span>.
             </p>
-            <p className="text-sm sm:text-base font-light leading-relaxed text-[#303438]/60 text-center">
-              From REST APIs to React frontends, component libraries to full-stack applications — 
-              I help startups and teams ship fast with maintainable, production-ready code.
+            <p className="text-base font-light leading-relaxed text-[#303438]/60 text-center">
+              From API backends to UI kits, deployable websites to brand toolkits — 
+              I help early-stage startups and creatives launch fast with lean, beautiful, scalable systems.
             </p>
           </div>
         </div>
@@ -393,9 +394,9 @@ const Portfolio = () => {
               <span className="text-[#303438]">LET'S</span>
               <span className="text-[#A12121] ml-2 sm:ml-4">CONNECT</span>
             </h2>
-            <div className="w-16 sm:w-24 h-px bg-[#C6A357] mx-auto mb-6 sm:mb-8"></div>
-            <p className="text-base sm:text-lg font-light text-[#303438]/70">
-              Ready to build something scalable together?
+            <div className="w-24 h-px bg-[#C6A357] mx-auto mb-8"></div>
+            <p className="text-lg font-light text-[#303438]/70">
+              Ready to transform your brand idea into a developer-ready system?
             </p>
           </div>
 
