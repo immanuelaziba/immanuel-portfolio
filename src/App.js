@@ -336,6 +336,7 @@ const Portfolio = () => {
             </div>
           </div>
           </section>
+    
 
           {/* Social Links */}
           <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
@@ -368,7 +369,7 @@ const Portfolio = () => {
             </a>
           </div>
         </div>
-      </section>
+
 
       {/* Footer - Ultra Minimal */}
       <footer className="py-12 md:py-16 border-t border-[#303438]/10">
