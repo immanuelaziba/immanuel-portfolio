@@ -279,14 +279,23 @@ const Portfolio = () => {
             </p>
           </div>
         </div>
-      <section>-[#C6A357] font-normal">human-centered engineering</span>. I believe tech should adapt to people, not the other way around. That means clean interfaces, intuitive layouts, and systems that respect user attention.
-            </p>
-            <p className="text-lg font-light leading-relaxed text-[#303438]/70">
-              Right now, I'm building and refining digital products that sit at the intersection of usability, design clarity, and solid development — with a focus on impact, not noise.
-            </p>
-          </div>
+      {/* About Extension Section */}
+        <section className="py-16 md:py-20">
+        <div className="max-w-4xl mx-auto px-6 md:px-8">
+          <p className="text-base md:text-lg font-light leading-relaxed text-[#303438]/70">
+            My philosophy is rooted in{" "}
+            <span className="text-[#C6A357] font-normal">human-centered engineering</span>. 
+            I believe tech should adapt to people, not the other way around. That means clean 
+            interfaces, intuitive layouts, and systems that respect user attention.
+          </p>
+          <p className="text-base md:text-lg font-light leading-relaxed text-[#303438]/70 mt-6">
+            Right now, I'm building and refining digital products that sit at the
+            intersection of usability, design clarity, and solid development — with a
+            focus on impact, not noise.
+          </p>
         </div>
       </section>
+
 
       {/* Contact Section */}
       <section id="contact" className="py-20 md:py-32 border-t border-[#303438]/10">
