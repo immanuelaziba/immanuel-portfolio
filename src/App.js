@@ -92,16 +92,15 @@ const Portfolio = () => {
           {/* Large Typography Hero */}
           <div className="mb-12 md:mb-16">
             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-light mb-6 md:mb-8 tracking-tight leading-tight">
-              <span className="block text-[#303438]">I'm Immanuel Aziba —</span>
-              <span className="block text-[#C6A357] font-normal mt-2">a software engineer</span>
-              <span className="block text-[#303438] mt-2">with a design edge.</span>
+              <span className="block text-[#C6A357] font-normal mt-2">Software Engineer</span>
+              <span className="block text-[#303438] mt-2">with Design Edge.</span>
             </h1>
           </div>
 
           {/* Subtitle */}
           <div className="max-w-2xl mx-auto mb-12 md:mb-16 px-4">
             <p className="text-base md:text-xl font-light leading-relaxed text-[#303438]/80">
-              I build human-centered digital products with clarity, clean UI, and thoughtful engineering.
+              I build human-centered digital products with clarity, clean UI, <br> and thoughtful engineering.
             </p>
           </div>
 
