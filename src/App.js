@@ -279,7 +279,7 @@ const Portfolio = () => {
             </p>
           </div>
         </div>
-      </section>-[#C6A357] font-normal">human-centered engineering</span>. I believe tech should adapt to people, not the other way around. That means clean interfaces, intuitive layouts, and systems that respect user attention.
+      <section>-[#C6A357] font-normal">human-centered engineering</span>. I believe tech should adapt to people, not the other way around. That means clean interfaces, intuitive layouts, and systems that respect user attention.
             </p>
             <p className="text-lg font-light leading-relaxed text-[#303438]/70">
               Right now, I'm building and refining digital products that sit at the intersection of usability, design clarity, and solid development — with a focus on impact, not noise.
