@@ -294,13 +294,13 @@ const Portfolio = () => {
             focus on impact, not noise.
           </p>
         </div>
+        </div>
       </section>
 
 
       {/* Contact Section */}
       <section id="contact" className="py-20 md:py-32 border-t border-[#303438]/10">
         <div className="max-w-4xl mx-auto px-6 md:px-8">
-          
           <div className="text-center mb-16 md:mb-20">
             <h2 className="text-3xl md:text-5xl font-light mb-4 md:mb-6 tracking-tight text-[#303438]">
               Let's Connect
@@ -310,7 +310,7 @@ const Portfolio = () => {
               Open to discussing projects, collaborations, or just connecting.
             </p>
           </div>
-
+        
           {/* Contact Info - Minimal Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-12 mb-12 md:mb-16">
             <div className="text-center">
@@ -318,14 +318,24 @@ const Portfolio = () => {
                 <Mail className="w-5 h-5 md:w-6 md:h-6 text-[#C6A357] mx-auto" />
               </div>
               <p className="text-xs md:text-sm font-medium text-[#303438]/60 mb-2 tracking-wide">EMAIL</p>
-              <a href="mailto:immanuelaziba@gmail.com" className="text-sm md:text-base font-light hover:text-[#C6A357] transition-colors break-all">immanuelaziba@gmail.com</a>
+              <a
+                href="mailto:immanuelaziba@gmail.com"
+                className="text-sm md:text-base font-light hover:text-[#C6A357] transition-colors break-all"
+              >
+                immanuelaziba@gmail.com
+              </a>
             </div>
             <div className="text-center">
               <div className="mb-3 md:mb-4">
                 <Phone className="w-5 h-5 md:w-6 md:h-6 text-[#C6A357] mx-auto" />
               </div>
               <p className="text-xs md:text-sm font-medium text-[#303438]/60 mb-2 tracking-wide">PHONE</p>
-              <a href="tel:+2349031525643" className="text-sm md:text-base font-light hover:text-[#C6A357] transition-colors">+234.903.152.5643</a>
+              <a
+                href="tel:+2349031525643"
+                className="text-sm md:text-base font-light hover:text-[#C6A357] transition-colors"
+              >
+                +234.903.152.5643
+              </a>
             </div>
             <div className="text-center">
               <div className="mb-3 md:mb-4">
@@ -336,12 +346,12 @@ const Portfolio = () => {
             </div>
           </div>
           </section>
-    
+
 
           {/* Social Links */}
           <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
-            <a 
-              href="https://github.com/immanuelaziba" 
+            <a
+              href="https://github.com/immanuelaziba"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-2 text-[#303438]/60 hover:text-[#C6A357] transition-colors duration-300"
@@ -350,8 +360,8 @@ const Portfolio = () => {
               <span className="text-xs md:text-sm font-light tracking-wide">GitHub</span>
             </a>
             <div className="w-px h-4 bg-[#303438]/20"></div>
-            <a 
-              href="https://linkedin.com/in/immanuelaziba" 
+            <a
+              href="https://linkedin.com/in/immanuelaziba"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-2 text-[#303438]/60 hover:text-[#C6A357] transition-colors duration-300"
@@ -360,8 +370,8 @@ const Portfolio = () => {
               <span className="text-xs md:text-sm font-light tracking-wide">LinkedIn</span>
             </a>
             <div className="w-px h-4 bg-[#303438]/20"></div>
-            <a 
-              href="mailto:immanuelaziba@gmail.com" 
+            <a
+              href="mailto:immanuelaziba@gmail.com"
               className="group flex items-center gap-2 text-[#303438]/60 hover:text-[#C6A357] transition-colors duration-300"
             >
               <Mail className="w-4 h-4 md:w-5 md:h-5" />
@@ -370,13 +380,16 @@ const Portfolio = () => {
           </div>
         </div>
 
-
-      {/* Footer - Ultra Minimal */}
+      {/* Footer */}
       <footer className="py-12 md:py-16 border-t border-[#303438]/10">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs md:text-sm font-light text-[#303438]/40">
             <div className="flex items-center gap-3">
-              <img src="/logo.png" alt="Immanuel Aziba Logo" className="w-5 h-5 md:w-6 md:h-6 object-contain" />
+              <img
+                src="/logo.png"
+                alt="Immanuel Aziba Logo"
+                className="w-5 h-5 md:w-6 md:h-6 object-contain"
+              />
               <span>Immanuel Aziba</span>
             </div>
             <div>
@@ -390,4 +403,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
