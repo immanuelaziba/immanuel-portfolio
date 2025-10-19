@@ -335,6 +335,7 @@ const Portfolio = () => {
               <p className="text-sm md:text-base font-light">Abuja, Nigeria</p>
             </div>
           </div>
+          </section>
 
           {/* Social Links */}
           <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
