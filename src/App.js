@@ -22,8 +22,8 @@ const Portfolio = () => {
       description: "Digital storefront built with React and TailwindCSS with Paystack payment integration. Automated delivery system for UI kits and brand assets. Achieved 40 sales in first month with zero paid advertising.",
       tech: "React × TailwindCSS × Paystack API",
       status: "40+ Sales",
-      liveUrl: "https://devbrandkits.com",
-      sourceUrl: "https://github.com/immanuelaziba/dev-brand-kits"
+      liveUrl: "https://immanuelaziba.github.io/devbrandkits/",
+      sourceUrl: "https://github.com/immanuelaziba/devbrandkits"
     },
     {
       number: "02", 
@@ -32,8 +32,8 @@ const Portfolio = () => {
       description: "Rapid-branding MVP platform for entrepreneurs and small teams. Implemented reusable UI components and responsive landing sections. Used by early adopters as visual starter for brand identity.",
       tech: "React × TailwindCSS × Netlify",
       status: "Live MVP",
-      liveUrl: "https://quickbrand.ng",
-      sourceUrl: "https://github.com/immanuelaziba/quickbrand-ng"
+      liveUrl: "https://immanuelaziba.github.io/quickbrandng/",
+      sourceUrl: "https://github.com/immanuelaziba/quickbrandng"
     },
     {
       number: "03",
@@ -42,8 +42,8 @@ const Portfolio = () => {
       description: "Production-ready blog API with secure authentication, validation, and media uploads. RESTful architecture following MVC principles. Earned GIZ certification after deployment and presentation.",
       tech: "Node.js × Express × MongoDB × JWT",
       status: "Certified",
-      liveUrl: "https://blog-api-demo.herokuapp.com",
-      sourceUrl: "https://github.com/immanuelaziba/blog-api-backend"
+      liveUrl: "https://neo-brutal-blog.herokuapp.com",
+      sourceUrl: "https://github.com/immanuelaziba/neo-brutal-blog"
     },
     {
       number: "04",
@@ -53,7 +53,7 @@ const Portfolio = () => {
       tech: "React × TailwindCSS × Framer Motion",
       status: "Open Source",
       liveUrl: "https://chart-ui-kit.netlify.app",
-      sourceUrl: "https://github.com/immanuelaziba/chart-ui-kit"
+      sourceUrl: "https://immanuelaziba.github.io/chart-ui-kit/"
     }
   ];
 
