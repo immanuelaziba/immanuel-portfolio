@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, Phone, MapPin, ExternalLink, ArrowRight, Menu, X } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone, MapPin, ExternalLink, ArrowRight } from 'lucide-react';
 
 const Portfolio = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeProject, setActiveProject] = useState(null);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,213 +17,145 @@ const Portfolio = () => {
   const projects = [
     {
       number: "01",
-      title: "QuickBrand NG",
-      category: "Brand System Startup",
-      description: "Instant-branding service for small businesses using lean MVP principles. Built complete brand system with Notion, Paystack, Tailwind, and Vercel.",
-      tech: "Tailwind × Paystack × Notion × Vercel",
-      status: "Live Product",
-      liveUrl: "https://immanuelaziba.github.com/quickbrandng", // Replace with actual URL
-      sourceUrl: "https://github.com/immanuelaziba/quickbrandng" // Replace with actual repo
+      title: "Dev Brand Kits Storefront",
+      category: "Fullstack Product",
+      description: "Digital storefront built with React and TailwindCSS with Paystack payment integration. Automated delivery system for UI kits and brand assets. Achieved 40 sales in first month with zero paid advertising.",
+      tech: "React × TailwindCSS × Paystack API",
+      status: "40+ Sales",
+      liveUrl: "https://devbrandkits.com",
+      sourceUrl: "https://github.com/immanuelaziba/dev-brand-kits"
     },
     {
       number: "02", 
-      title: "Dev Brand Kits",
-      category: "Digital Storefront",
-      description: "React-based storefront with Paystack integration. HTML/CSS/JS templates, Tailwind UI kits, and developer resources. Achieved 40+ organic sales within first 4 weeks.",
-      tech: "React × TailwindCSS × Paystack API",
-      status: "40+ Sales",
-      liveUrl: "https://immanuelaziba.github.io/devbrandkits",
-      sourceUrl: "https://github.com/immanuelaziba/devbrandkits"
+      title: "QuickBrand NG",
+      category: "MVP Development",
+      description: "Rapid-branding MVP platform for entrepreneurs and small teams. Implemented reusable UI components and responsive landing sections. Used by early adopters as visual starter for brand identity.",
+      tech: "React × TailwindCSS × Netlify",
+      status: "Live MVP",
+      liveUrl: "https://quickbrand.ng",
+      sourceUrl: "https://github.com/immanuelaziba/quickbrand-ng"
     },
     {
       number: "03",
       title: "Blog API Backend",
       category: "GIZ Certification",
-      description: "Full CRUD blog API with Node.js, Express, MongoDB, JWT authentication. Complete documentation and testing in Postman.",
+      description: "Production-ready blog API with secure authentication, validation, and media uploads. RESTful architecture following MVC principles. Earned GIZ certification after deployment and presentation.",
       tech: "Node.js × Express × MongoDB × JWT",
       status: "Certified",
-      liveUrl: "https://immanuelaziba.github.io/blog-api-v1", // Replace with actual URL
-      sourceUrl: "https://github.com/immanuelaziba/blog-api-v1" // Replace with actual repo
+      liveUrl: "https://blog-api-demo.herokuapp.com",
+      sourceUrl: "https://github.com/immanuelaziba/blog-api-backend"
     },
     {
       number: "04",
-      title: "Commit Circle UI",
-      category: "Component Library", 
-      description: "Modular React component library with Chart.js integration. Documented in Storybook for interactive testing and developer experience.",
-      tech: "React × Chart.js × Storybook",
-      status: "Open Source",
-      liveUrl: "https://immanuelaziba.github.io/commit-circle-ui-kit", // Replace with actual URL
-      sourceUrl: "https://github.com/immanuelaziba/commit-circle-ui-kit" // Replace with actual repo
-    },
-    {
-      number: "05",
       title: "Chart UI Kit",
-      category: "Component Library", 
-      description: "Dashboard UI component library with charts, tables, and modals. Built with React and documented in Storybook for developer teams. Interactive testing and reusable components.",
-      tech: "React × Chart.js × Storybook",
+      category: "Design-to-Code System", 
+      description: "Reusable chart component kit for dashboards and product interfaces. Focused on motion, layout clarity, and developer-friendly structure. Shared as plug-and-play UI resource.",
+      tech: "React × TailwindCSS × Framer Motion",
       status: "Open Source",
-      liveUrl: "https://immanuelaziba.github.io/soulstack-v1",
-      sourceUrl: "https://github.com/immanuelaziba/soulstack-v1"
+      liveUrl: "https://chart-ui-kit.netlify.app",
+      sourceUrl: "https://github.com/immanuelaziba/chart-ui-kit"
     }
   ];
 
   const skills = [
-    { title: "Frontend Development", items: ["React", "Next.js", "JavaScript (ES6+)", "TailwindCSS"] },
-    { title: "Backend & APIs", items: ["Node.js", "Express.js", "MongoDB", "JWT Auth"] },
-    { title: "Tools & Deployment", items: ["Git/GitHub", "Vercel", "Postman", "Paystack API"] }
+    { title: "Frontend Engineering", items: ["React", "Next.js", "JavaScript ES6", "TailwindCSS"] },
+    { title: "Backend & APIs", items: ["Node.js", "Express.js", "MongoDB", "REST APIs"] },
+    { title: "UI & Product Systems", items: ["Component Architecture", "Framer Motion", "MVP Development", "Human-Centered Design"] }
   ];
 
-  const closeMenu = () => setMobileMenuOpen(false);
-
   return (
-    <div className="min-h-screen bg-white text-[#303438] font-light">
+    <div className="min-h-screen bg-[#EAE8E2] text-[#303438] font-light">
       
       {/* Navigation */}
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-white/95 backdrop-blur-sm border-b border-gray-100' : 'bg-transparent'}`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+      <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-[#EAE8E2]/95 backdrop-blur-sm border-b border-[#303438]/10' : 'bg-transparent'}`}>
+        <div className="max-w-7xl mx-auto px-8 py-6">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3 sm:space-x-4">
-              <img src="/immanuelaziba-logo.png" alt="Immanuel Aziba Logo" className="w-6 h-6 sm:w-8 sm:h-8 object-contain" />
-              <div className="text-lg sm:text-xl font-light tracking-wide">
+            <div className="flex items-center space-x-4">
+              <div className="w-8 h-8 bg-[#C6A357] rounded-full"></div>
+              <div className="text-xl font-light tracking-wide">
                 <span className="font-normal">Immanuel Aziba</span>
               </div>
             </div>
-            
-            {/* Desktop Menu */}
-            <div className="hidden md:flex items-center space-x-12 text-sm tracking-wider">
-              <a href="#work" className="hover:text-[#A12121] transition-colors duration-300">WORK</a>
-              <a href="#about" className="hover:text-[#A12121] transition-colors duration-300">ABOUT</a>
-              <a href="#contact" className="hover:text-[#A12121] transition-colors duration-300">CONTACT</a>
+            <div className="hidden md:flex items-center space-x-12 text-sm tracking-wide">
+              <a href="#work" className="hover:text-[#C6A357] transition-colors duration-300">Work</a>
+              <a href="#about" className="hover:text-[#C6A357] transition-colors duration-300">About</a>
+              <a href="#contact" className="text-[#C6A357] border-b border-[#C6A357] pb-1">Contact</a>
             </div>
-
-            {/* Mobile Menu Button */}
-            <button 
-              className="md:hidden p-2 text-[#303438] hover:text-[#A12121] transition-colors"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
           </div>
-
-          {/* Mobile Menu */}
-          {mobileMenuOpen && (
-            <div className="md:hidden mt-4 pb-4 border-t border-gray-100">
-              <div className="flex flex-col space-y-4 pt-4">
-                <a 
-                  href="#work" 
-                  className="text-sm tracking-wider hover:text-[#A12121] transition-colors duration-300"
-                  onClick={closeMenu}
-                >
-                  WORK
-                </a>
-                <a 
-                  href="#about" 
-                  className="text-sm tracking-wider hover:text-[#A12121] transition-colors duration-300"
-                  onClick={closeMenu}
-                >
-                  ABOUT
-                </a>
-                <a 
-                  href="#contact" 
-                  className="text-sm tracking-wider hover:text-[#A12121] transition-colors duration-300"
-                  onClick={closeMenu}
-                >
-                  CONTACT
-                </a>
-              </div>
-            </div>
-          )}
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center relative pt-20 sm:pt-24 pb-8 sm:pb-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="min-h-screen flex items-center justify-center relative pt-24 pb-16">
+        <div className="max-w-6xl mx-auto px-8 text-center">
           
           {/* Large Typography Hero */}
-          <div className="mb-8 sm:mb-16">
-            <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extralight mb-4 sm:mb-8 tracking-tighter leading-none">
-              <span className="block text-[#303438]">FROM</span>
-              <span className="block text-[#A12121] font-light">CONFUSED</span>
+          <div className="mb-16">
+            <h1 className="text-7xl md:text-8xl font-light mb-8 tracking-tight leading-none">
+              <span className="block text-[#303438]">I'm Immanuel Aziba —</span>
+              <span className="block text-[#C6A357] font-normal mt-2">a software engineer</span>
+              <span className="block text-[#303438] mt-2">with a design edge.</span>
             </h1>
-            <div className="flex items-center justify-center my-6 sm:my-12">
-              <div className="h-px bg-gradient-to-r from-transparent via-[#C6A357] to-transparent w-16 sm:w-32"></div>
-              <div className="mx-4 sm:mx-8 text-[#C6A357] text-xs sm:text-sm tracking-[0.2em] sm:tracking-[0.3em]">TO</div>
-              <div className="h-px bg-gradient-to-r from-transparent via-[#C6A357] to-transparent w-16 sm:w-32"></div>
-            </div>
-            <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extralight tracking-tighter leading-none">
-              <span className="block text-[#C6A357]">CONSISTENT</span>
-            </h2>
           </div>
 
           {/* Subtitle */}
           <div className="max-w-2xl mx-auto mb-16">
-            <p className="text-xl font-light leading-relaxed text-[#303438]/70 mb-4">
-              Brand Designer × Frontend Developer × Strategy-Driven Builder
-            </p>
-            <p className="text-base font-light leading-relaxed text-[#303438]/60">
-              Guiding creators through digital transformation with clarity, simplicity, and trust.
+            <p className="text-xl font-light leading-relaxed text-[#303438]/80">
+              I build human-centered digital products with clarity, clean UI, and thoughtful engineering.
             </p>
           </div>
 
           {/* CTA */}
-          <div className="flex flex-col items-center gap-6 sm:gap-8">
-            <button
-              onClick={() => {
-                document.getElementById("work")?.scrollIntoView({ behavior: "smooth" });
-              }}
-              className="group relative overflow-hidden bg-[#A12121] text-white px-8 sm:px-12 py-3 sm:py-4 text-sm tracking-wider transition-all duration-300 hover:bg-[#8B1A1A] hover:-translate-y-0.5 w-full sm:w-auto max-w-xs"
-            >
-              <span className="relative z-10 flex items-center justify-center gap-3">
+          <div className="flex flex-col items-center gap-8">
+            <a href="#work" className="group relative overflow-hidden bg-[#C6A357] text-[#303438] px-12 py-4 rounded-lg text-sm font-medium tracking-wide transition-all duration-300 hover:bg-[#B39347] hover:-translate-y-0.5 shadow-soft">
+              <span className="relative z-10 flex items-center gap-3">
                 VIEW SELECTED WORK
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </span>
-            </button>
-          </div>
-
+            </a>
             
             {/* Stats - Minimal */}
             <div className="flex items-center gap-16 text-center mt-8">
               <div>
-                <div className="text-2xl font-light text-[#A12121]">40+</div>
+                <div className="text-2xl font-normal text-[#C6A357]">40+</div>
                 <div className="text-xs tracking-wider text-[#303438]/60">KITS SOLD</div>
               </div>
               <div className="w-px h-12 bg-[#303438]/10"></div>
               <div>
-                <div className="text-2xl font-light text-[#A12121]">3</div>
+                <div className="text-2xl font-normal text-[#C6A357]">3</div>
                 <div className="text-xs tracking-wider text-[#303438]/60">PRODUCTS SHIPPED</div>
               </div>
               <div className="w-px h-12 bg-[#303438]/10"></div>
               <div>
-                <div className="text-2xl font-light text-[#A12121]">5+</div>
-                <div className="text-xs tracking-wider text-[#303438]/60">CLIENT PROJECTS</div>
+                <div className="text-2xl font-normal text-[#C6A357]">GIZ</div>
+                <div className="text-xs tracking-wider text-[#303438]/60">CERTIFIED</div>
               </div>
             </div>
           </div>
+        </div>
       </section>
 
-      {/* Skills Section */}
-      <section className="py-16 sm:py-24 lg:py-32 border-t border-gray-100">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Skills Section - Minimal */}
+      <section className="py-32 border-t border-[#303438]/10">
+        <div className="max-w-6xl mx-auto px-8">
           
-          <div className="text-center mb-12 sm:mb-20">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extralight mb-4 sm:mb-6 tracking-tight">
-              <span className="text-[#303438]">CORE</span>
-              <span className="text-[#A12121] ml-2 sm:ml-4">FOCUS</span>
+          <div className="text-center mb-20">
+            <h2 className="text-5xl font-light mb-6 tracking-tight text-[#303438]">
+              Core Focus
             </h2>
-            <div className="w-16 sm:w-24 h-px bg-[#C6A357] mx-auto"></div>
+            <div className="w-24 h-px bg-[#C6A357] mx-auto"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 sm:gap-16">
+          <div className="grid md:grid-cols-3 gap-16">
             {skills.map((skill, index) => (
               <div key={index} className="text-center group">
-                <h3 className="text-xl sm:text-2xl font-light mb-6 sm:mb-8 text-[#A12121] tracking-wide">
-                  {skill.title.toUpperCase()}
+                <h3 className="text-lg font-medium mb-8 text-[#C6A357] tracking-wide">
+                  {skill.title}
                 </h3>
-                <div className="space-y-3 sm:space-y-4">
+                <div className="space-y-4">
                   {skill.items.map((item, i) => (
                     <div key={i} className="relative">
-                      <div className="text-sm font-light text-[#303438]/70 hover:text-[#A12121] transition-colors duration-300 cursor-pointer">
+                      <div className="text-sm font-light text-[#303438]/70 hover:text-[#C6A357] transition-colors duration-300 cursor-pointer">
                         {item}
                       </div>
                     </div>
@@ -237,18 +168,17 @@ const Portfolio = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="work" className="py-16 sm:py-24 lg:py-32 bg-gray-50/30">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="work" className="py-32 bg-[#303438]/[0.02]">
+        <div className="max-w-6xl mx-auto px-8">
           
-          <div className="text-center mb-12 sm:mb-20">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extralight mb-4 sm:mb-6 tracking-tight">
-              <span className="text-[#303438]">SELECTED</span>
-              <span className="text-[#A12121] ml-2 sm:ml-4">WORK</span>
+          <div className="text-center mb-20">
+            <h2 className="text-5xl font-light mb-6 tracking-tight text-[#303438]">
+              Selected Work
             </h2>
-            <div className="w-16 sm:w-24 h-px bg-[#C6A357] mx-auto"></div>
+            <div className="w-24 h-px bg-[#C6A357] mx-auto"></div>
           </div>
 
-          <div className="space-y-12 sm:space-y-16 lg:space-y-24">
+          <div className="space-y-24">
             {projects.map((project, index) => (
               <div 
                 key={index}
@@ -256,103 +186,56 @@ const Portfolio = () => {
                 onMouseEnter={() => setActiveProject(index)}
                 onMouseLeave={() => setActiveProject(null)}
               >
-                <div className="border-b border-gray-200 pb-6 sm:pb-8 hover:border-[#A12121] transition-all duration-500">
+                <div className="flex items-start justify-between border-b border-[#303438]/10 pb-8 hover:border-[#C6A357] transition-all duration-500">
                   
-                  {/* Mobile Layout */}
-                  <div className="block lg:hidden">
-                    <div className="flex items-start gap-4 mb-4">
-                      <div className="text-2xl sm:text-3xl font-extralight text-[#C6A357] tracking-wider">
-                        {project.number}
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-xl sm:text-2xl font-light mb-2 text-[#303438] group-hover:text-[#A12121] transition-colors duration-300">
-                          {project.title}
-                        </h3>
-                        <p className="text-sm text-[#A12121] mb-3 tracking-wider">
-                          {project.category.toUpperCase()}
-                        </p>
-                      </div>
+                  {/* Project Number & Title */}
+                  <div className="flex items-start gap-12 flex-1">
+                    <div className="text-4xl font-light text-[#C6A357] tracking-wide">
+                      {project.number}
                     </div>
-                    <p className="text-sm sm:text-base font-light leading-relaxed text-[#303438]/70 mb-3">
-                      {project.description}
-                    </p>
-                    <p className="text-xs sm:text-sm font-light text-[#303438]/60 mb-4">
-                      {project.tech}
-                    </p>
-                    <div className="flex items-center justify-between">
-                      <div className="text-xs sm:text-sm text-[#C6A357] tracking-wider">
-                        {project.status.toUpperCase()}
+                    <div className="flex-1">
+                      <h3 className="text-3xl font-normal mb-3 text-[#303438] group-hover:text-[#C6A357] transition-colors duration-300">
+                        {project.title}
+                      </h3>
+                      <p className="text-sm text-[#35D3C5] mb-6 tracking-wide font-medium">
+                        {project.category}
+                      </p>
+                      <p className="text-base font-light leading-relaxed text-[#303438]/70 max-w-2xl mb-4">
+                        {project.description}
+                      </p>
+                      <p className="text-sm font-light text-[#303438]/60">
+                        {project.tech}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Status & Links */}
+                  <div className="flex items-center gap-6 text-right">
+                    <div className="space-y-2">
+                      <div className="text-sm text-[#C6A357] mb-2 tracking-wide font-medium">
+                        {project.status}
                       </div>
-                      <div className="flex items-center gap-4">
+                      <div className="flex items-center gap-3">
                         <a 
                           href={project.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-xs text-[#A12121] hover:text-[#8B1A1A] transition-colors duration-300 tracking-wider"
+                          className="text-xs text-[#35D3C5] hover:text-[#2BC4B6] transition-colors duration-300 tracking-wide"
                         >
                           LIVE SITE
                         </a>
+                        <div className="w-px h-3 bg-[#303438]/20"></div>
                         <a 
                           href={project.sourceUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-xs text-[#303438]/60 hover:text-[#A12121] transition-colors duration-300 tracking-wider"
+                          className="text-xs text-[#303438]/60 hover:text-[#C6A357] transition-colors duration-300 tracking-wide"
                         >
                           SOURCE
                         </a>
                       </div>
                     </div>
-                  </div>
-
-                  {/* Desktop Layout */}
-                  <div className="hidden lg:flex items-start justify-between">
-                    <div className="flex items-start gap-12 flex-1">
-                      <div className="text-4xl font-extralight text-[#C6A357] tracking-wider">
-                        {project.number}
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-3xl font-light mb-3 text-[#303438] group-hover:text-[#A12121] transition-colors duration-300">
-                          {project.title}
-                        </h3>
-                        <p className="text-sm text-[#A12121] mb-6 tracking-wider">
-                          {project.category.toUpperCase()}
-                        </p>
-                        <p className="text-base font-light leading-relaxed text-[#303438]/70 max-w-2xl mb-4">
-                          {project.description}
-                        </p>
-                        <p className="text-sm font-light text-[#303438]/60">
-                          {project.tech}
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center gap-6 text-right">
-                      <div className="space-y-2">
-                        <div className="text-sm text-[#C6A357] mb-2 tracking-wider">
-                          {project.status.toUpperCase()}
-                        </div>
-                        <div className="flex items-center gap-3">
-                          <a 
-                            href={project.liveUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-xs text-[#A12121] hover:text-[#8B1A1A] transition-colors duration-300 tracking-wider"
-                          >
-                            LIVE SITE
-                          </a>
-                          <div className="w-px h-3 bg-[#303438]/20"></div>
-                          <a 
-                            href={project.sourceUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-xs text-[#303438]/60 hover:text-[#A12121] transition-colors duration-300 tracking-wider"
-                          >
-                            SOURCE
-                          </a>
-                        </div>
-                      </div>
-                      <ExternalLink className={`w-6 h-6 transition-all duration-300 ${activeProject === index ? 'text-[#A12121] transform translate-x-1 -translate-y-1' : 'text-[#303438]/40'}`} />
-                    </div>
+                    <ExternalLink className={`w-6 h-6 transition-all duration-300 ${activeProject === index ? 'text-[#C6A357] transform translate-x-1 -translate-y-1' : 'text-[#303438]/40'}`} />
                   </div>
                 </div>
               </div>
@@ -361,109 +244,114 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-16 sm:py-24 lg:py-32">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extralight mb-4 sm:mb-6 tracking-tight text-[#303438]">
-              PHILOSOPHY
+      {/* About Section - Minimal */}
+      <section id="about" className="py-32">
+        <div className="max-w-4xl mx-auto px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-light mb-6 tracking-tight text-[#303438]">
+              About
             </h2>
-            <div className="w-16 sm:w-24 h-px bg-[#C6A357] mx-auto"></div>
+            <div className="w-24 h-px bg-[#C6A357] mx-auto"></div>
           </div>
           
-          <div className="max-w-3xl mx-auto">
-            <p className="text-xl font-light leading-relaxed text-[#303438]/80 text-center mb-8">
-              I believe in the power of <span className="text-[#A12121]">systematic clarity</span>. 
-              Every brand deserves a foundation that developers can trust, 
-              designers can expand, and creators can <span className="text-[#C6A357]">scale confidently</span>.
+          <div className="max-w-3xl mx-auto space-y-6">
+            <p className="text-lg font-light leading-relaxed text-[#303438]/80">
+              Work happens where design and engineering overlap. The goal isn't to ship features — it's to ship things people actually understand and want to use. That means clean UI, readable code, and products that don't feel like work.
             </p>
-            <p className="text-base font-light leading-relaxed text-[#303438]/60 text-center">
-              From API backends to UI kits, deployable websites to brand toolkits — 
-              I help early-stage startups and creatives launch fast with lean, beautiful, scalable systems.
+            <p className="text-lg font-light leading-relaxed text-[#303438]/80">
+              I'm a software engineer with a design edge, and I build digital products with clarity and intention. I care about how interfaces feel — not just how they're built. My approach combines clean engineering, usability, and visual refinement.
+            </p>
+            <p className="text-lg font-light leading-relaxed text-[#303438]/70">
+              I've worked on UI systems, landing pages, digital brand kits, and product experiences that reflect both structure and taste. To me, engineering isn't just code — it's communication, flow, and the ability to make something usable without friction.
+            </p>
+            <p className="text-lg font-light leading-relaxed text-[#303438]/70">
+              My philosophy is rooted in <span className="text-[#C6A357] font-normal">human-centered engineering</span>. I believe tech should adapt to people, not the other way around. That means clean interfaces, intuitive layouts, and systems that respect user attention.
+            </p>
+            <p className="text-lg font-light leading-relaxed text-[#303438]/70">
+              Right now, I'm building and refining digital products that sit at the intersection of usability, design clarity, and solid development — with a focus on impact, not noise.
             </p>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 sm:py-24 lg:py-32 border-t border-gray-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="contact" className="py-32 border-t border-[#303438]/10">
+        <div className="max-w-4xl mx-auto px-8">
           
-          <div className="text-center mb-12 sm:mb-20">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extralight mb-4 sm:mb-6 tracking-tight">
-              <span className="text-[#303438]">LET'S</span>
-              <span className="text-[#A12121] ml-2 sm:ml-4">CONNECT</span>
+          <div className="text-center mb-20">
+            <h2 className="text-5xl font-light mb-6 tracking-tight text-[#303438]">
+              Let's Connect
             </h2>
             <div className="w-24 h-px bg-[#C6A357] mx-auto mb-8"></div>
             <p className="text-lg font-light text-[#303438]/70">
-              Ready to transform your brand idea into a developer-ready system?
+              Open to discussing projects, collaborations, or just connecting.
             </p>
           </div>
 
-          {/* Contact Info */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 mb-12 sm:mb-16">
+          {/* Contact Info - Minimal Grid */}
+          <div className="grid md:grid-cols-3 gap-12 mb-16">
             <div className="text-center">
               <div className="mb-4">
-                <Mail className="w-6 h-6 text-[#A12121] mx-auto" />
+                <Mail className="w-6 h-6 text-[#C6A357] mx-auto" />
               </div>
-              <p className="text-sm font-light text-[#303438]/60 mb-2 tracking-wider">EMAIL</p>
-              <p className="text-sm sm:text-base font-light break-all">immanuelaziba@gmail.com</p>
+              <p className="text-sm font-medium text-[#303438]/60 mb-2 tracking-wide">EMAIL</p>
+              <a href="mailto:immanuelaziba@gmail.com" className="text-base font-light hover:text-[#C6A357] transition-colors">immanuelaziba@gmail.com</a>
             </div>
             <div className="text-center">
               <div className="mb-4">
-                <Phone className="w-6 h-6 text-[#A12121] mx-auto" />
+                <Phone className="w-6 h-6 text-[#C6A357] mx-auto" />
               </div>
-              <p className="text-sm font-light text-[#303438]/60 mb-2 tracking-wider">PHONE</p>
-              <p className="text-sm sm:text-base font-light">+234.903.152.5643</p>
+              <p className="text-sm font-medium text-[#303438]/60 mb-2 tracking-wide">PHONE</p>
+              <a href="tel:+2349031525643" className="text-base font-light hover:text-[#C6A357] transition-colors">+234.903.152.5643</a>
             </div>
             <div className="text-center">
               <div className="mb-4">
-                <MapPin className="w-6 h-6 text-[#A12121] mx-auto" />
+                <MapPin className="w-6 h-6 text-[#C6A357] mx-auto" />
               </div>
-              <p className="text-sm font-light text-[#303438]/60 mb-2 tracking-wider">LOCATION</p>
-              <p className="text-sm sm:text-base font-light">Abuja, Nigeria</p>
+              <p className="text-sm font-medium text-[#303438]/60 mb-2 tracking-wide">LOCATION</p>
+              <p className="text-base font-light">Abuja, Nigeria</p>
             </div>
           </div>
 
           {/* Social Links */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8">
+          <div className="flex items-center justify-center gap-8">
             <a 
               href="https://github.com/immanuelaziba" 
-              target="_blank" 
+              target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-2 text-[#303438]/60 hover:text-[#A12121] transition-colors duration-300 touch-target"
+              className="group flex items-center gap-2 text-[#303438]/60 hover:text-[#C6A357] transition-colors duration-300"
             >
               <Github className="w-5 h-5" />
-              <span className="text-sm font-light tracking-wider">GITHUB</span>
+              <span className="text-sm font-light tracking-wide">GitHub</span>
             </a>
-            <div className="hidden sm:block w-px h-4 bg-[#303438]/20"></div>
+            <div className="w-px h-4 bg-[#303438]/20"></div>
             <a 
-              href="https://www.linkedin.com/in/immanuelaziba" 
-              target="_blank" 
+              href="https://linkedin.com/in/immanuelaziba" 
+              target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-2 text-[#303438]/60 hover:text-[#A12121] transition-colors duration-300 touch-target"
+              className="group flex items-center gap-2 text-[#303438]/60 hover:text-[#C6A357] transition-colors duration-300"
             >
               <Linkedin className="w-5 h-5" />
-              <span className="text-sm font-light tracking-wider">LINKEDIN</span>
+              <span className="text-sm font-light tracking-wide">LinkedIn</span>
             </a>
-            <div className="hidden sm:block w-px h-4 bg-[#303438]/20"></div>
+            <div className="w-px h-4 bg-[#303438]/20"></div>
             <a 
               href="mailto:immanuelaziba@gmail.com" 
-              className="group flex items-center gap-2 text-[#303438]/60 hover:text-[#A12121] transition-colors duration-300 touch-target"
+              className="group flex items-center gap-2 text-[#303438]/60 hover:text-[#C6A357] transition-colors duration-300"
             >
               <Mail className="w-5 h-5" />
-              <span className="text-sm font-light tracking-wider">EMAIL</span>
+              <span className="text-sm font-light tracking-wide">Email</span>
             </a>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-8 sm:py-16 border-t border-gray-100">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row items-center justify-between text-sm font-light text-[#303438]/40 gap-4">
+      {/* Footer - Ultra Minimal */}
+      <footer className="py-16 border-t border-[#303438]/10">
+        <div className="max-w-6xl mx-auto px-8">
+          <div className="flex items-center justify-between text-sm font-light text-[#303438]/40">
             <div className="flex items-center gap-3">
-              <img src="/immanuelaziba-logo.png" alt="Immanuel Aziba Logo" className="w-6 h-6 object-contain" />
+              <div className="w-6 h-6 bg-[#C6A357] rounded-full"></div>
               <span>Immanuel Aziba</span>
             </div>
             <div>
