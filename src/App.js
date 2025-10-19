@@ -100,7 +100,7 @@ const Portfolio = () => {
           {/* Subtitle */}
           <div className="max-w-2xl mx-auto mb-12 md:mb-16 px-4">
             <p className="text-base md:text-xl font-light leading-relaxed text-[#303438]/80">
-              I build human-centered digital products with clarity, clean UI, <br> and thoughtful engineering.
+              I build human-centered digital products with clarity, clean UI,<br /> and thoughtful engineering.
             </p>
           </div>
 
