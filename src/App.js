@@ -79,7 +79,7 @@ const Portfolio = () => {
             <div className="flex items-center space-x-6 md:space-x-12 text-xs md:text-sm tracking-wide">
               <a href="#work" className="hover:text-[#C6A357] transition-colors duration-300">Work</a>
               <a href="#about" className="hover:text-[#C6A357] transition-colors duration-300">About</a>
-              <a href="#contact" className="hover:text-[#C6A357] transition-colors duration-300 border-b border-[#C6A357] pb-1">Contact</a>
+              <a href="#contact" className="hover:text-[#C6A357] transition-colors duration-300">Contact</a>
             </div>
           </div>
         </div>
